@@ -13,7 +13,7 @@ class Queue:
             It will remove when minute = start at 1, 4, 7, 10, ... or It is minute % 3 == 0 and + 1 same as the testcase.
             '''
             if minute % 3 == 1 and self.cashier1: 
-                self.cashier1.pop(0)
+                self.cashier1.pop(0)  
 
             if minute % 2 == 0 and self.cashier2:
                 self.cashier2.pop(0)
