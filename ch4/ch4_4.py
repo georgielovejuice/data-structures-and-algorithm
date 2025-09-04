@@ -112,6 +112,5 @@ def main():
     cafe = Coffeeshop(log)
     cafe.run()
 
-
 if __name__ == "__main__":
     main()

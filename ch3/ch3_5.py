@@ -7,7 +7,6 @@ class ParkingLot:
     '''
     def __init__(self, maximum, soi, operation):
         self.maximum = int(maximum)
-        self.soi = soi
         op_partition = operation.strip().split()
         self.operation = op_partition[0] if op_partition else ''
         self.car_number = int(op_partition[1]) if len(op_partition) > 1 else None

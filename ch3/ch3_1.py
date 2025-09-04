@@ -1,6 +1,6 @@
 inp = input("Enter Input : ")
 stack = []
-num = 0
+num = 0 
 for i in inp:
     if i == '(' or i == '[':
         stack.append(i)

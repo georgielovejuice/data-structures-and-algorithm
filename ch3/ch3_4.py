@@ -7,7 +7,7 @@ class Calculator:
         input_expression = input_expression.split()
 
         for char in input_expression:
-            if char.isdigit():
+            if char.isdigit(): # Check if char is a digit (0-9)
                 self.stack.append(int(char))
             elif char == "+":
                 if len(self.stack) < 2:

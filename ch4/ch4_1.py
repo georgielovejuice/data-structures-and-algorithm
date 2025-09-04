@@ -11,7 +11,7 @@ class Queue:
 
     def dequeue(self):
         if not self.isEmpty():
-            return self.queue.pop(0)
+            return self.queue.pop(0) # has to be pop(0) to remove the first element
         return ("-1")
 
     def size(self):
@@ -34,9 +34,6 @@ class Queue:
             print(f"Number in Queue is :   {self.queue}")
         else:
             print(f"Empty")
-
-
-
 
 input_data = input("Enter Input : ").split(',')
 queue = Queue(input_data)
