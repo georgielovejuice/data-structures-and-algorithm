@@ -13,7 +13,7 @@ class AVLTree:
         def setHeight(self):
             self.height = 1 + max(self.getHeight(self.left), self.getHeight(self.right))
             return self.height            
-
+        
         def getHeight(self, node):
             return -1 if node == None else node.height
            
