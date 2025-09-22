@@ -35,7 +35,7 @@ class BinarySearchTree:
             node.right, deleted = self.delete(node.right, data)
         else: #เจอNodeที่จะลบ
             deleted = True
-            if node.left is None and node.right is None: #No child
+            if node.left is None and node.right is None: #No child #หรือเจอค่าที่จะลบเป็น root #Leaf node
                 return None, True
             elif node.left is None: #One child
                 return node.right, True
